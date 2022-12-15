@@ -1,0 +1,214 @@
+/* style.css : 페이지별 UI */
+@charset "utf-8";
+
+@import "./font.scss";
+@import "./layout.scss";
+
+
+
+
+.view {
+
+  .cardbox {
+    padding: 16px 16px 24px;
+    border-radius: 6px;
+    border: 1px solid #f2f4f5;
+    box-shadow: #32325d05 0px 2px 5px -1px, #0000000d 0px 1px 3px -1px;
+    h4 {
+      margin: 0 0 16px;
+      font-weight: 400;
+    }
+    .avatar {
+      background:#eff2f7;
+    }
+
+    .skills {
+      padding: 0 12px 0 0;
+      legend {
+        font-size: 0.85rem;
+        text-align: right;
+        white-space: nowrap;
+        width: 90px;
+      }
+      li {
+        padding: 6px 6px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+      }
+      .progressBar {
+        gap: 0 6px;
+      }
+    }
+
+    .chips {
+      text-align: center;
+      .chip {
+        //background-color: $color-main;
+        border-radius: 6px;
+        margin: 2px 2px;
+      }
+    }
+
+    .about {
+      svg {
+        transform: scale(.9);
+        margin-right: 12px;
+        color: #aaa;
+      }
+      legend {
+        font-size: 0.92rem;
+      }
+      li {
+        padding: 6px 12px;
+      }
+    }
+
+    .timeline {
+      margin-bottom: -32px;
+      ul {
+        li {
+          .period, .subPeriod {
+            font-size: 0.85rem;
+            color:#666;
+          }
+          .period, .content {
+            padding: 0;
+            margin: -5px 16px 0;
+          }
+          .content, label {
+            font-size: 0.92rem;
+          }
+          .content {
+            margin-bottom: 32px;
+          }
+          .desc {
+            font-size: 0.85rem;
+            color: $color-gray;
+          }
+          .connector {
+            width: 1px;
+            background-color: #e9ecee;
+          }
+          .dot {
+            background-color: $color-main;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .dataGrid {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #f2f4f5;
+    box-shadow: #32325d05 0px 2px 5px -1px, #0000000d 0px 1px 3px -1px;
+    .MuiDataGrid-columnHeaders {
+      background: #ecf0f7;
+      border-bottom: none;
+    }
+    .MuiDataGrid-footerContainer {
+      display: none;
+    }
+    .MuiDataGrid-columnHeaderDraggableContainer,
+    .MuiDataGrid-columnHeader,
+    .MuiDataGrid-columnHeader:focus,
+    .MuiDataGrid-cell:focus {
+      outline: none !important;
+    }
+    .MuiDataGrid-menuIcon,
+    .MuiDataGrid-columnSeparator {
+      display: none !important;
+    }
+  }
+
+
+  ul.lists {
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid #f2f4f5;
+    box-shadow: #32325d05 0px 2px 5px -1px, #0000000d 0px 1px 3px -1px;
+    li {
+      border-bottom:1px solid #eee;
+      padding: 16px 24px;
+      .list-body {
+        margin: 0;
+        .list-title {
+          margin: 4px 0;
+          line-height: 1.2;
+          font-size: 0.92rem;
+        }
+        p {margin: 0;}
+      }
+      &:last-child {
+        border: none;
+      }
+      @include mobile {
+        .list-icon {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/*
+##Device = Laptops, Desktops
+##Screen = more than #{$breakpoint-desktop}
+##Device = 랩탑, 데스크탑
+##Screen = #{$breakpoint-desktop} 이상
+*/
+@include desktop {}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w #{$breakpoint-laptop} to #{$breakpoint-desktop - 1px}
+##Device = 랩탑, 데스크탑
+##Screen = #{$breakpoint-laptop} 에서 #{$breakpoint-desktop - 1px} 사이
+*/
+@include laptop {}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w #{$breakpoint-tablet-land} to #{$breakpoint-laptop - 1px}
+##Device = 태블릿, 아이패드(가로)
+##Screen = #{$breakpoint-tablet-land} 에서 #{$breakpoint-laptop - 1px} 사이
+*/
+@include tablet-land {}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w #{$breakpoint-tablet-port} to #{$breakpoint-tablet-land - 1px}
+##Device = 태블릿, 아이패드(세로)
+##Screen = #{$breakpoint-tablet-port} 에서 #{$breakpoint-tablet-land - 1px} 사이
+*/
+@include tablet {}
+
+/*
+##Device = Most of the Smartphones Mobiles
+##Screen = B/w #{$breakpoint-mobile} to #{$breakpoint-tablet-port - 1px}
+##Device = 대부분의 스마트폰 모바일 기기
+##Screen = #{$breakpoint-mobile} 에서 #{$breakpoint-tablet-port - 1px} 사이
+*/
+@include mobile {}
+
+/*
+##Device = Old Smartphones Mobiles
+##Screen = less than #{$breakpoint-mobile-old}
+##Device = 구형 스마트폰 모바일 기기
+##Screen = #{$breakpoint-mobile-old} 이하
+*/
+@include mobile-old {}

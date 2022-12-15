@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import "./color.scss";
+
+.main {
+  .dashboard {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    height: calc(100% - 44px);
+    text-align: center;
+    i {
+      font-size: 3rem;
+      color: $text-lightblue;
+      font-style: normal;
+    }
+    h4 {
+      font-size: 2.2rem;
+      margin: 0.2rem 0 0;
+    }
+    p {
+      color: $color-gray;
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+    }
+  }
+}

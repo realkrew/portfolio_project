@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "layout.css",
+	"sources": [
+		"layout.scss",
+		"color.scss",
+		"mixins.scss",
+		"variables.scss"
+	],
+	"names": [],
+	"mappings": ";AAAA,8BAA8B;ACA9B,8BAA8B;ACA9B,oCAAoC;ACApC,iCAAiC;AHMjC,AAAA,IAAI,CAAC;EAAC,SAAS,EGJS,KAAK,GHIY;;AAKzC,AAAA,MAAM,CAAC;EACL,QAAQ,EAAE,KAAK;EACf,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,OAAO,GAC1B"
+}

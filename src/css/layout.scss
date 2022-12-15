@@ -1,0 +1,225 @@
+/* layout.css : 공통 Layout */
+@charset "utf-8";
+
+@import "./color.scss";
+@import "./mixins.scss";
+
+$snb-height: 60px;
+$main-height: calc(100vh - #{$snb-height});
+
+body {
+  min-width:$breakpoint-mobile-old;
+  background: $color-bg;
+  letter-spacing: -0.02rem;
+  overflow: hidden;
+}
+
+.mainMenu {
+  padding: 6px 20px !important;
+  min-height: 40px !important;
+  a {
+    text-decoration: none;
+    color: $color-main;
+    font-size: .92rem;
+  }
+}
+
+
+.layout {
+  padding-top: $snb-height;
+  display: flex;
+  .header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $snb-height;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: $color-main;
+    .toolbar {
+      min-height: $snb-height;
+    }
+    .gnb {
+      margin-left: 4px;
+      .menu {
+        font-weight: 700;
+        margin: 0 4px;
+      }
+    }
+  }
+
+  $nav-width: 220px;
+  $main-width: calc(100% - #{$nav-width});
+
+  .snb {
+    width: $nav-width;
+    min-width: $nav-width;
+    background: #fff;
+    border-right: 1px solid #e9ecee;
+    padding: 0;
+    h2 {
+      color: $text-gray;
+      font-size: 0.71rem;
+      margin: 0;
+      line-height: 3;
+      padding: 0 1.4rem;
+      text-transform: uppercase;
+    }
+    .snb-list {
+      span {
+        font-size: .92rem;
+      }
+    }
+    .snb-list-collapse {
+      span {
+        color: #666;
+        font-size: .85rem;
+        line-height: 1;
+      }
+    }
+  }
+
+
+  .main {
+    min-width: $main-width;
+    height: $main-height;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    position: relative;
+
+    .contents {
+      padding:48px;
+    }
+
+    .pageTitle {
+      display: flex;
+      align-items: flex-end;
+      gap: 0 8px;
+      h3 {
+        font-size: 1.71rem;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1;
+      }
+      .subTitle {
+        margin: 0;
+        line-height: 1.2;
+        color: $text-gray;
+      }
+    }
+
+    .breadcrumb {
+      margin-top: 16px;
+      ol li {
+        font-size: 0.6rem;
+        color: $color-gray;
+        a, p {
+          font-size: 0.85rem;
+          //font-weight: 300;
+        }
+        a {
+          color: $color-main;
+        }
+        p {
+          color: $text-black;
+        }
+      }
+    }
+
+    .view {
+      margin-top: 16px;
+      padding: 16px 0 20px;
+      border-top: 1px solid #e9ecee;
+    }
+
+    footer {
+      height: 44px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        line-height: 44px;
+        margin: 0;
+        color: $text-gray;
+        font-size: .85rem;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$set-gutter: 32px;
+
+//@mixin side-padding {
+//  padding-left:$set-gutter !important;
+//  padding-right:$set-gutter !important;
+//}
+
+/*
+##Device = Laptops, Desktops
+##Screen = more than #{$breakpoint-desktop}
+##Device = 랩탑, 데스크탑
+##Screen = #{$breakpoint-desktop} 이상
+*/
+@include desktop {}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w #{$breakpoint-laptop} to #{$breakpoint-desktop - 1px}
+##Device = 랩탑, 데스크탑
+##Screen = #{$breakpoint-laptop} 에서 #{$breakpoint-desktop - 1px} 사이
+*/
+@include laptop {}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w #{$breakpoint-tablet-land} to #{$breakpoint-laptop - 1px}
+##Device = 태블릿, 아이패드(가로)
+##Screen = #{$breakpoint-tablet-land} 에서 #{$breakpoint-laptop - 1px} 사이
+*/
+@include tablet-land {}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w #{$breakpoint-tablet-port} to #{$breakpoint-tablet-land - 1px}
+##Device = 태블릿, 아이패드(세로)
+##Screen = #{$breakpoint-tablet-port} 에서 #{$breakpoint-tablet-land - 1px} 사이
+*/
+@include tablet {}
+
+/*
+##Device = Most of the Smartphones Mobiles
+##Screen = B/w #{$breakpoint-mobile} to #{$breakpoint-tablet-port - 1px}
+##Device = 대부분의 스마트폰 모바일 기기
+##Screen = #{$breakpoint-mobile} 에서 #{$breakpoint-tablet-port - 1px} 사이
+*/
+@include mobile {
+  .layout .main .contents {
+    padding: $set-gutter;
+    //@include side-padding;
+  }
+}
+
+/*
+##Device = Old Smartphones Mobiles
+##Screen = less than #{$breakpoint-mobile-old}
+##Device = 구형 스마트폰 모바일 기기
+##Screen = #{$breakpoint-mobile-old} 이하
+*/
+@include mobile-old {}
+

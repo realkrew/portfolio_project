@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* color.css : 테마 및 컬러 */
+.main .dashboard {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  height: calc(100% - 44px);
+  text-align: center; }
+  .main .dashboard i {
+    font-size: 3rem;
+    color: #cfdff7;
+    font-style: normal; }
+  .main .dashboard h4 {
+    font-size: 2.2rem;
+    margin: 0.2rem 0 0; }
+  .main .dashboard p {
+    color: #9FA0A0;
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem; }
+
+/*# sourceMappingURL=main.css.map */
