@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio_project/static/css/main.37183c1c.css",
+    "main.js": "/portfolio_project/static/js/main.15554620.js",
+    "static/js/787.071eb048.chunk.js": "/portfolio_project/static/js/787.071eb048.chunk.js",
+    "static/media/Pretendard-ExtraLight.ttf": "/portfolio_project/static/media/Pretendard-ExtraLight.fb268e6dd35c9b839898.ttf",
+    "static/media/Pretendard-Regular.ttf": "/portfolio_project/static/media/Pretendard-Regular.02efe31729ef598431fa.ttf",
+    "static/media/Pretendard-Black.ttf": "/portfolio_project/static/media/Pretendard-Black.cf38221a09d463f304d8.ttf",
+    "static/media/Pretendard-Bold.ttf": "/portfolio_project/static/media/Pretendard-Bold.c118fe5a220efe6a75c7.ttf",
+    "static/media/MalgunGothic.eot": "/portfolio_project/static/media/MalgunGothic.6d21393bcaff98271370.eot",
+    "static/media/Pretendard-Black.subset.woff": "/portfolio_project/static/media/Pretendard-Black.subset.4f8e5437ba9f25710957.woff",
+    "static/media/Pretendard-Bold.subset.woff": "/portfolio_project/static/media/Pretendard-Bold.subset.a5b05933481760ba875f.woff",
+    "static/media/Pretendard-Regular.subset.woff": "/portfolio_project/static/media/Pretendard-Regular.subset.feb0c75c4c55c0af4a59.woff",
+    "static/media/Pretendard-ExtraLight.subset.woff": "/portfolio_project/static/media/Pretendard-ExtraLight.subset.bb17294a70a57b2cceff.woff",
+    "static/media/thumbnail.png": "/portfolio_project/static/media/thumbnail.906f0bab3b850f5b033b.png",
+    "static/media/Pretendard-Black.subset.woff2": "/portfolio_project/static/media/Pretendard-Black.subset.9d03115ad880aaed1b1f.woff2",
+    "static/media/Pretendard-Bold.subset.woff2": "/portfolio_project/static/media/Pretendard-Bold.subset.3ea17ade93f1a103b386.woff2",
+    "static/media/Pretendard-Regular.subset.woff2": "/portfolio_project/static/media/Pretendard-Regular.subset.24a53eb8fb33356590ac.woff2",
+    "static/media/Pretendard-ExtraLight.subset.woff2": "/portfolio_project/static/media/Pretendard-ExtraLight.subset.48dfe14251d664a26e4f.woff2",
+    "static/media/Roboto-Regular.ttf": "/portfolio_project/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
+    "static/media/Roboto-Bold.ttf": "/portfolio_project/static/media/Roboto-Bold.17451a4c1cd55e33ac57.ttf",
+    "static/media/Roboto-Light.ttf": "/portfolio_project/static/media/Roboto-Light.ce61b8b68994802f2e55.ttf",
+    "static/media/Roboto-Bold.woff": "/portfolio_project/static/media/Roboto-Bold.de0cae9549d2dcf68490.woff",
+    "static/media/Roboto-Regular.woff": "/portfolio_project/static/media/Roboto-Regular.755dd4f3935688012767.woff",
+    "static/media/Roboto-Light.woff": "/portfolio_project/static/media/Roboto-Light.de099c9f379b48014033.woff",
+    "static/media/Roboto-Bold.woff2": "/portfolio_project/static/media/Roboto-Bold.92fbd4e93cf0a5dbebaa.woff2",
+    "static/media/Roboto-Regular.woff2": "/portfolio_project/static/media/Roboto-Regular.64cfb66c866ea50cad47.woff2",
+    "static/media/Roboto-Light.woff2": "/portfolio_project/static/media/Roboto-Light.c27d89ac77468ae18f28.woff2",
+    "static/media/logo-w.svg": "/portfolio_project/static/media/logo-w.855288537e295120b59742dc8e1962d7.svg",
+    "index.html": "/portfolio_project/index.html",
+    "main.37183c1c.css.map": "/portfolio_project/static/css/main.37183c1c.css.map",
+    "main.15554620.js.map": "/portfolio_project/static/js/main.15554620.js.map",
+    "787.071eb048.chunk.js.map": "/portfolio_project/static/js/787.071eb048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37183c1c.css",
+    "static/js/main.15554620.js"
+  ]
+}
