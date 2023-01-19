@@ -20,15 +20,18 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "@types/react": "^17.0.38"
+  },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME ./build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://www.devlimm.site",
+  "homepage": "https://www.devlimm.site",
   "eslintConfig": {
     "extends": [
       "react-app",
