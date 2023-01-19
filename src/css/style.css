@@ -171,10 +171,16 @@ body {
     .layout .header .toolbar {
       min-height: 60px; }
     .layout .header .gnb {
-      margin-left: 4px; }
+      margin-left: 4px;
+      padding: 0 1rem;
+      gap: 0 1rem; }
       .layout .header .gnb .menu {
         font-weight: 700;
-        margin: 0 4px; }
+        margin: 0 4px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.02rem; }
   .layout .snb {
     width: 220px;
     min-width: 220px;

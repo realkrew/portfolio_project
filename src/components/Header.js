@@ -22,16 +22,18 @@ const Header = () => {
                         <Logo width="120" height="25" />
                     </Link>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' } }} className="gnb">
-                        {menus.map((menus) => (
-                            <Button
-                                key={menus.title}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                                href={menus.link}
-                                className="menu"
-                            >
-                                {menus.title}
-                            </Button>
-                        ))}
+                        {/*{menus.map((object) => (*/}
+                        {/*    <Button*/}
+                        {/*        key={object.title}*/}
+                        {/*        sx={{ my: 2, color: 'white', display: 'block' }}*/}
+                        {/*        href={object.link}*/}
+                        {/*        className="menu"*/}
+                        {/*    >*/}
+                        {/*        {object.title}*/}
+                        {/*    </Button>*/}
+                        {/*))}*/}
+                        <Link to="/profile" className="menu">Profile</Link>
+                        <Link to="/projects" className="menu">Projects</Link>
                     </Box>
                 </Toolbar>
             </AppBar>
